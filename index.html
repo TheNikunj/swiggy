@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swiggy</title>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <!-- for dropdown alt + z -->
+    <div class="header">
+        <!-- header logic -->
+        <!-- int the left side i nedd icon of swiggy , immedite to this add one dropdown -->
+        <!-- towards right side i need menu item links as , offers, help, signin cart, search -->
+        <!-- develop one responsieve website with colourfull colors, and try to apply amimations and mtions and alos effects like hovering and etc -->
+    </div>
+
+    <!-- Header -->
+    <div class="header">
+        <div class="left">
+            <img src="mainlogo.png" alt="Swiggy" class="logo" /> Swiggy
+            <select class="dropdown">
+                <option>Choose Option</option>
+                <option>Food</option>
+                <option>Groceries</option>
+                <option>Delivery</option>
+            </select>
+        </div>
+        <div class="right">
+            <a href="offer.html" class="menu-item"><i class="fa-solid fa-star"></i><i class="fa-solid fa-percent"></i>
+                Offers</a>
+            <a href="help.html" class="menu-item"><i class="fa-solid fa-life-ring"></i> Help</a>
+            <a href="signin.html" class="menu-item"><i class="fa-solid fa-user"></i> Sign In</a>
+            <a href="cart.html" class="menu-item"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <input type="text" class="search" placeholder="Search food...">
+        </div>
+    </div>
+
+
+
+    <!-- Wishlist Section -->
+    <div class="wish">
+        <h2 class="wish-heading">What's on Your Mind?</h2>
+        <div class="food-container">
+            <div class="food-item"><img src="pizza.png" alt="Pizza"><span>Pizza</span></div>
+            <div class="food-item"><img src="burger.png" alt="Burger"><span>Burger</span></div>
+            <div class="food-item"><img src="shusi.png" alt="Sushi"><span>Sushi</span></div>
+            <div class="food-item"><img src="donut.png" alt="Donut"><span>Donut</span></div>
+        </div>
+    </div>
+
+    <!-- main content -->
+
+    <div class="food-delivery-container">
+        <div class="food-delivery-title">Restaurants with online food delivery in Karwar</div>
+
+        <div class="food-delivery-filters">
+            <div class="filter-option">Sort By</div>
+            <div class="filter-option">Fast Delivery</div>
+            <div class="filter-option">New on Swiggy</div>
+            <div class="filter-option">Ratings 4.0+</div>
+            <div class="filter-option">Pure Veg</div>
+            <div class="filter-option">Offers</div>
+            <div class="filter-option">Rs. 300 - Rs. 600</div>
+            <div class="filter-option">Less than Rs. 300</div>
+        </div>
+
+        <div class="food-delivery-grid">
+            <div class="food-delivery-card">
+                <img src="https://source.unsplash.com/300x200/?idli,dosa" alt="Upahara Darshini"
+                    class="food-delivery-image">
+                <div class="food-delivery-info">
+                    <div class="food-delivery-name">Upahara Darshini</div>
+                    <div class="food-delivery-rating">★ 4.4 • <span class="food-delivery-time">10-15 mins</span></div>
+                    <div class="food-delivery-cuisine">South Indian, North Indian</div>
+                </div>
+            </div>
+
+            <div class="food-delivery-card">
+                <img src="https://source.unsplash.com/300x200/?cake,chocolate" alt="Monginis"
+                    class="food-delivery-image">
+                <div class="food-delivery-info">
+                    <div class="food-delivery-name">Monginis</div>
+                    <div class="food-delivery-rating">★ 4.0 • <span class="food-delivery-time">10-15 mins</span></div>
+                    <div class="food-delivery-cuisine">Bakery, Chinese</div>
+                </div>
+            </div>
+
+            <div class="food-delivery-card">
+                <img src="https://source.unsplash.com/300x200/?tea,chai" alt="Namaste Chai" class="food-delivery-image">
+                <div class="food-delivery-info">
+                    <div class="food-delivery-name">Namaste Chai</div>
+                    <div class="food-delivery-rating">★ 4.4 • <span class="food-delivery-time">20-25 mins</span></div>
+                    <div class="food-delivery-cuisine">Chinese, Burgers</div>
+                    <div class="food-delivery-offer">20% OFF UPTO ₹50</div>
+                </div>
+            </div>
+
+            <div class="food-delivery-card">
+                <img src="https://source.unsplash.com/300x200/?idli,sambhar" alt="Hotel Shrutisagar"
+                    class="food-delivery-image">
+                <div class="food-delivery-info">
+                    <div class="food-delivery-name">Hotel Shrutisagar</div>
+                    <div class="food-delivery-rating">★ 4.5 • <span class="food-delivery-time">10-15 mins</span></div>
+                    <div class="food-delivery-cuisine">South Indian, Desserts</div>
+                </div>
+            </div>
+
+            <div class="food-delivery-card">
+                <img src="https://source.unsplash.com/300x200/?biryani,indianfood" alt="K Plus Veg Restaurant"
+                    class="food-delivery-image">
+                <div class="food-delivery-info">
+                    <div class="food-delivery-name">K PLUS VEG RESTAURANT</div>
+                    <div class="food-delivery-rating">★ 4.3 • <span class="food-delivery-time">10-15 mins</span></div>
+                </div>
+            </div>
+
+            <div class="food-delivery-card">
+                <img src="https://source.unsplash.com/300x200/?dosa,southindian" alt="Hotel Swagat"
+                    class="food-delivery-image">
+                <div class="food-delivery-info">
+                    <div class="food-delivery-name">Hotel Swagat</div>
+                    <div class="food-delivery-rating">★ 4.2 • <span class="food-delivery-time">25-30 mins</span></div>
+                    <div class="food-delivery-offer">10% OFF UPTO ₹40</div>
+                </div>
+            </div>
+
+            <div class="food-delivery-card">
+                <img src="https://source.unsplash.com/300x200/?tea,kulhad" alt="Redy Tea Cafeteria"
+                    class="food-delivery-image">
+                <div class="food-delivery-info">
+                    <div class="food-delivery-name">Redy Tea Cafeteria</div>
+                    <div class="food-delivery-offer">30% OFF UPTO ₹150</div>
+                </div>
+            </div>
+
+            <div class="food-delivery-card">
+                <img src="https://source.unsplash.com/300x200/?blackforestcake,dessert" alt="Cakeiz"
+                    class="food-delivery-image">
+                <div class="food-delivery-info">
+                    <div class="food-delivery-name">Cakeiz</div>
+                    <div class="food-delivery-rating">★ 4.4 • <span class="food-delivery-time">10-15 mins</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer-section">
+        <div class="footer-owner">
+            <p>Designed by <a href="#" class="owner-link">Your Name</a></p>
+        </div>
+        <div class="footer-links">
+            <a href="mailto:your@email.com" class="footer-email">Email Us</a>
+            <p class="footer-copy">&copy; 2025 Your Company. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="social-link"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="social-link"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

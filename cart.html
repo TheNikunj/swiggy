@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swiggy</title>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="cart.css">
+    
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="left">
+            <img src="mainlogo.png" alt="Swiggy" class="logo" />
+            <select class="dropdown">
+                <option>Choose Option</option>
+                <option>Food</option>
+                <option>Groceries</option>
+                <option>Delivery</option>
+            </select>
+        </div>
+        <div class="right">
+            <a href="offer.html" class="menu-item"><i class="fa-solid fa-star"></i><i class="fa-solid fa-percent"></i>
+                Offers</a>
+            <a href="help.html" class="menu-item"><i class="fa-solid fa-life-ring"></i> Help</a>
+            <a href="signin.html" class="menu-item"><i class="fa-solid fa-user"></i> Sign In</a>
+            <a href="cart.html" class="menu-item"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <input type="text" class="search" placeholder="Search food...">
+        </div>
+    </div>
+
+
+    <!-- Cart Section -->
+    <div class="cart-section">
+        <h2>Your Cart</h2>
+
+        <!-- Cart Item: Burger -->
+        <div class="cart-item">
+            <img src="burger.png" alt="Burger">
+            <div class="item-details">
+                <h3>Cheese Burger</h3>
+                <p class="price">$5.99</p>
+                <div class="quantity">
+                    <button class="decrease">-</button>
+                    <input type="number" value="1" min="1">
+                    <button class="increase">+</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cart Item: Pizza -->
+        <div class="cart-item">
+            <img src="pizza.png" alt="Pizza">
+            <div class="item-details">
+                <h3>Margherita Pizza</h3>
+                <p class="price">$8.99</p>
+                <div class="quantity">
+                    <button class="decrease">-</button>
+                    <input type="number" value="1" min="1">
+                    <button class="increase">+</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Total Amount -->
+        <div class="cart-total">
+            <h3>Total: <span id="total-amount">$14.98</span></h3>
+        </div>
+    </div>
+
+   
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const decreaseButtons = document.querySelectorAll(".decrease");
+            const increaseButtons = document.querySelectorAll(".increase");
+            const totalAmount = document.getElementById("total-amount");
+
+            function updateTotal() {
+                let total = 0;
+                document.querySelectorAll(".cart-item").forEach((item) => {
+                    const price = parseFloat(item.querySelector(".price").textContent.replace("$", ""));
+                    const quantity = parseInt(item.querySelector("input").value);
+                    total += price * quantity;
+                });
+                totalAmount.textContent = `$${total.toFixed(2)}`;
+            }
+
+            decreaseButtons.forEach((btn) => {
+                btn.addEventListener("click", function () {
+                    let input = this.nextElementSibling;
+                    if (input.value > 1) {
+                        input.value--;
+                        updateTotal();
+                    }
+                });
+            });
+
+            increaseButtons.forEach((btn) => {
+                btn.addEventListener("click", function () {
+                    let input = this.previousElementSibling;
+                    input.value++;
+                    updateTotal();
+                });
+            });
+
+            updateTotal();
+        });
+
+    </script>
+</body>
+
+</html>

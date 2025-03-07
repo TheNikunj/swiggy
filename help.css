@@ -1,0 +1,117 @@
+/* Google Font for Better Readability */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #f9f9f9; /* Soft White Background */
+}
+
+/* Help Section Container */
+.help-container {
+    margin-top: 100px;
+    width: 600px;
+    background: #fff; /* White Box */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15); /* Soft Shadow */
+    text-align: center;
+    border: 3px solid transparent;
+    transition: 0.4s ease-in-out;
+    animation: fadeIn 1s ease-in-out;
+    position: relative;
+}
+
+/* Border & Hover Effects */
+.help-container:hover {
+    border-color: #FC8019; /* Swiggy Orange Border */
+    box-shadow: 0 8px 30px rgba(252, 128, 25, 0.4); /* Orange Glow */
+    transform: translateY(-5px);
+}
+
+/* Title */
+.help-container h2 {
+    color: #282828; /* Dark Gray for Title */
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* Description */
+.help-container p {
+    color: #4A4A4A;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* Input Fields */
+.help-form input,
+.help-form textarea {
+    width: calc(100% - 20px);
+    padding: 14px;
+    margin: 12px 0;
+    border: 2px solid #FC8019; /* Swiggy Orange Border */
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    background: #fff7f1; /* Light Orange Background */
+    color: #333;
+    transition: 0.3s;
+}
+
+/* Input Placeholder */
+.help-form input::placeholder,
+.help-form textarea::placeholder {
+    color: #666;
+}
+
+/* Input Focus Effect */
+.help-form input:focus,
+.help-form textarea:focus {
+    background: #ffe8d6; /* Lighter Orange */
+    transform: scale(1.05);
+    border-color: #D76A1F; /* Darker Orange */
+    box-shadow: 0 0 12px rgba(252, 128, 25, 0.5);
+}
+
+/* Textarea Customization */
+.help-form textarea {
+    height: 120px;
+    resize: none;
+}
+
+/* Submit Button */
+.help-button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    background: #FC8019; /* Swiggy Orange */
+    color: white;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 600;
+}
+
+/* Button Hover */
+.help-button:hover {
+    background: #D76A1F; /* Darker Swiggy Orange */
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(252, 128, 25, 0.6);
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

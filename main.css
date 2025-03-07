@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+
+.food-delivery-container {
+    margin-left: 70px;
+    max-width: 90%;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.food-delivery-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.food-delivery-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.filter-option {
+    padding: 10px 15px;
+    background: #ff5722;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.filter-option:hover {
+    background: #e64a19;
+}
+
+.food-delivery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.food-delivery-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.food-delivery-card:hover {
+    transform: scale(1.05);
+}
+
+.food-delivery-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.food-delivery-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.food-delivery-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.food-delivery-rating {
+    font-size: 14px;
+    color: #ff9800;
+    margin-bottom: 5px;
+}
+
+.food-delivery-time {
+    font-weight: bold;
+    color: #333;
+}
+
+.food-delivery-cuisine {
+    font-size: 14px;
+    color: #777;
+}
+
+.food-delivery-offer {
+    font-size: 14px;
+    color: #d32f2f;
+    font-weight: bold;
+    margin-top: 5px;
+}

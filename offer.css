@@ -1,0 +1,70 @@
+/* Offer Page Styling */
+.offer-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 30px;
+    background: #f8f9fa;
+    justify-content: center;
+}
+
+.offer-category {
+    background: white;
+    width: 320px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.offer-category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Offer Title */
+.offer-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff5722;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: 2px solid #ff5722;
+    padding-bottom: 5px;
+}
+
+/* Offer Cards */
+.offer-card {
+    background: linear-gradient(135deg, #ff9966, #ff5e62);
+    color: white;
+    font-size: 16px;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, background 0.3s ease;
+    cursor: pointer;
+}
+
+/* Hover Animation */
+.offer-card:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #ff5e62, #ff9966);
+}
+
+/* Animation for card entry */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.offer-category {
+    animation: fadeIn 0.5s ease-in-out;
+}
