@@ -1,0 +1,14 @@
+all format 
+
+<div class="wish">
+        <!-- here i need to add to whats on your mind heading, below this one need top food itmes in a row direction , having 4 item in a row and also add hover effect when i hover on food item and also add arrival effect-->
+
+    </div>
+
+    <!-- for dropdown alt + z -->
+    <div class="header">
+        <!-- header logic -->
+        <!-- int the left side i nedd icon of swiggy , immedite to this add one dropdown -->
+        <!-- towards right side i need menu item links as , offers, help, signin cart, search -->
+        <!-- develop one responsieve website with colourfull colors, and try to apply amimations and mtions and alos effects like hovering and etc -->
+    </div>

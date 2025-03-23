@@ -1,121 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Swiggy</title>
-    <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
-    <link rel="stylesheet" href="header.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="cart.css">
-    
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Food Cart</title>
+  <link rel="stylesheet" href="cart.css">
 </head>
-
 <body>
-    <!-- Header -->
-    <div class="header">
-        <div class="left">
-            <img src="mainlogo.png" alt="Swiggy" class="logo" />
-            <select class="dropdown">
-                <option>Choose Option</option>
-                <option>Food</option>
-                <option>Groceries</option>
-                <option>Delivery</option>
-            </select>
+  <div class="container">
+    <div class="cart-container">
+      <div class="cart-header">
+        <h1>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="cart-icon"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path><path d="M3 6h18"></path><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+          Your Cart
+        </h1>
+        <span id="items-count" class="items-badge"></span>
+      </div>
+
+      <div class="cart-items">
+        <div class="cart-item" data-id="1">
+          <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=300" alt="Cheese Burger">
+          <div class="item-details">
+            <h3>Cheese Burger</h3>
+            <p class="price">$5.99</p>
+          </div>
+          <div class="quantity-controls">
+            <button class="quantity-btn minus" disabled>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/></svg>
+            </button>
+            <span class="quantity">0</span>
+            <button class="quantity-btn plus">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
+            </button>
+          </div>
         </div>
-        <div class="right">
-            <a href="offer.html" class="menu-item"><i class="fa-solid fa-star"></i><i class="fa-solid fa-percent"></i>
-                Offers</a>
-            <a href="help.html" class="menu-item"><i class="fa-solid fa-life-ring"></i> Help</a>
-            <a href="signin.html" class="menu-item"><i class="fa-solid fa-user"></i> Sign In</a>
-            <a href="cart.html" class="menu-item"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
-            <i class="fa-solid fa-magnifying-glass search-icon"></i>
-            <input type="text" class="search" placeholder="Search food...">
+
+        <div class="cart-item" data-id="2">
+          <img src="https://images.unsplash.com/photo-1604382355076-af4b0eb60143?w=300" alt="Margherita Pizza">
+          <div class="item-details">
+            <h3>Margherita Pizza</h3>
+            <p class="price">$8.99</p>
+          </div>
+          <div class="quantity-controls">
+            <button class="quantity-btn minus" disabled>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/></svg>
+            </button>
+            <span class="quantity">0</span>
+            <button class="quantity-btn plus">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
+            </button>
+          </div>
         </div>
+
+        <div class="cart-item" data-id="3">
+          <img src="https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?w=300" alt="French Fries">
+          <div class="item-details">
+            <h3>French Fries</h3>
+            <p class="price">$3.49</p>
+          </div>
+          <div class="quantity-controls">
+            <button class="quantity-btn minus" disabled>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/></svg>
+            </button>
+            <span class="quantity">0</span>
+            <button class="quantity-btn plus">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="cart-item" data-id="4">
+          <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=300" alt="Cold Coffee">
+          <div class="item-details">
+            <h3>Cold Coffee</h3>
+            <p class="price">$4.99</p>
+          </div>
+          <div class="quantity-controls">
+            <button class="quantity-btn minus" disabled>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/></svg>
+            </button>
+            <span class="quantity">0</span>
+            <button class="quantity-btn plus">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="cart-footer">
+        <div class="total">
+          <span>Total Amount</span>
+          <span id="total-amount">$0.00</span>
+        </div>
+        <button id="checkout-btn" class="checkout-btn" disabled>
+          Proceed to Checkout
+        </button>
+      </div>
     </div>
-
-
-    <!-- Cart Section -->
-    <div class="cart-section">
-        <h2>Your Cart</h2>
-
-        <!-- Cart Item: Burger -->
-        <div class="cart-item">
-            <img src="burger.png" alt="Burger">
-            <div class="item-details">
-                <h3>Cheese Burger</h3>
-                <p class="price">$5.99</p>
-                <div class="quantity">
-                    <button class="decrease">-</button>
-                    <input type="number" value="1" min="1">
-                    <button class="increase">+</button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Cart Item: Pizza -->
-        <div class="cart-item">
-            <img src="pizza.png" alt="Pizza">
-            <div class="item-details">
-                <h3>Margherita Pizza</h3>
-                <p class="price">$8.99</p>
-                <div class="quantity">
-                    <button class="decrease">-</button>
-                    <input type="number" value="1" min="1">
-                    <button class="increase">+</button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Total Amount -->
-        <div class="cart-total">
-            <h3>Total: <span id="total-amount">$14.98</span></h3>
-        </div>
-    </div>
-
-   
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const decreaseButtons = document.querySelectorAll(".decrease");
-            const increaseButtons = document.querySelectorAll(".increase");
-            const totalAmount = document.getElementById("total-amount");
-
-            function updateTotal() {
-                let total = 0;
-                document.querySelectorAll(".cart-item").forEach((item) => {
-                    const price = parseFloat(item.querySelector(".price").textContent.replace("$", ""));
-                    const quantity = parseInt(item.querySelector("input").value);
-                    total += price * quantity;
-                });
-                totalAmount.textContent = `$${total.toFixed(2)}`;
-            }
-
-            decreaseButtons.forEach((btn) => {
-                btn.addEventListener("click", function () {
-                    let input = this.nextElementSibling;
-                    if (input.value > 1) {
-                        input.value--;
-                        updateTotal();
-                    }
-                });
-            });
-
-            increaseButtons.forEach((btn) => {
-                btn.addEventListener("click", function () {
-                    let input = this.previousElementSibling;
-                    input.value++;
-                    updateTotal();
-                });
-            });
-
-            updateTotal();
-        });
-
-    </script>
+  </div>
+  <script src="cart.js"></script>
 </body>
-
 </html>
